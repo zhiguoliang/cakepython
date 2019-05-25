@@ -1,0 +1,183 @@
+2019-05-19 17:30:47 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-19 17:30:47 _internal.py[line:122] INFO  * Debugger PIN: 255-816-947
+2019-05-19 17:30:47 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-19 17:30:47 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:30:47] "POST /v1/mobile/client/register HTTP/1.1" 400 -
+2019-05-19 17:30:54 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-19 17:30:54 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-19 17:30:54 _internal.py[line:122] INFO  * Debugger PIN: 255-816-947
+2019-05-19 17:30:54 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-19 17:31:07 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:31:07] "POST /v1/mobile/client/register HTTP/1.1" 400 -
+2019-05-19 17:31:23 _internal.py[line:122] INFO  * Detected change in 'D:\\cake\\flask-admin\\api\\app\\api\\mobile\\v1\\client.py', reloading
+2019-05-19 17:31:23 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-19 17:31:24 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-19 17:31:24 _internal.py[line:122] INFO  * Debugger PIN: 255-816-947
+2019-05-19 17:31:24 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-19 17:31:25 cake.py[line:40] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\cake\flask-admin\api\app\api\mobile\v1\client.py", line 17, in create_client
+    1/0
+ZeroDivisionError: division by zero
+2019-05-19 17:31:25 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:31:25] "POST /v1/mobile/client/register HTTP/1.1" 500 -
+2019-05-19 17:31:58 _internal.py[line:122] INFO  * Detected change in 'D:\\cake\\flask-admin\\api\\cake.py', reloading
+2019-05-19 17:31:58 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-19 17:31:59 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-19 17:31:59 _internal.py[line:122] INFO  * Debugger PIN: 255-816-947
+2019-05-19 17:31:59 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-19 17:31:59 cake.py[line:40] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\cake\flask-admin\api\app\api\mobile\v1\client.py", line 17, in create_client
+    1/0
+ZeroDivisionError: division by zero
+2019-05-19 17:31:59 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:31:59] "POST /v1/mobile/client/register HTTP/1.1" 500 -
+2019-05-19 17:32:12 cake.py[line:40] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\cake\flask-admin\api\app\api\mobile\v1\client.py", line 17, in create_client
+    1/0
+ZeroDivisionError: division by zero
+2019-05-19 17:32:12 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:32:12] "POST /v1/mobile/client/register HTTP/1.1" 500 -
+2019-05-19 17:32:35 cake.py[line:40] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\cake\flask-admin\api\app\api\mobile\v1\client.py", line 17, in create_client
+    1/0
+ZeroDivisionError: division by zero
+2019-05-19 17:32:35 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:32:35] "POST /v1/mobile/client/register HTTP/1.1" 500 -
+2019-05-19 17:33:42 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-19 17:33:43 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-19 17:33:43 _internal.py[line:122] INFO  * Debugger PIN: 255-816-947
+2019-05-19 17:33:43 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-19 17:33:50 cake.py[line:40] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 133, in execute
+    self.errorhandler(exc, value)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 35, in errorhandler
+    self.connection.errorhandler(self, errorclass, errorvalue)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\connections.py", line 118, in errorhandler
+    raise errorvalue
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 128, in execute
+    self._query(query)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 238, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\connections.py", line 342, in query
+    self._result = MySQLResult(self)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\packet.py", line 260, in __init__
+    self.first_packet = MysqlPacket(self.connection)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\packet.py", line 67, in __init__
+    raise_mysql_exception(self.__data)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\err.py", line 142, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\err.py", line 135, in _check_mysql_exception
+    raise errorclass(errno,errorvalue)
+cymysql.err.DataError: (1406, "Data too long for column 'email' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\cake\flask-admin\api\app\api\mobile\v1\client.py", line 24, in create_client
+    promise[form.type.data]()
+  File "D:\cake\flask-admin\api\app\api\mobile\v1\client.py", line 39, in __register_user_by_email
+    User.register_by_email(form.nickname.data, form.account.data, form.secret.data)
+  File "D:\cake\flask-admin\api\app\models\user.py", line 41, in register_by_email
+    db.session.add(user)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Lib\contextlib.py", line 119, in __exit__
+    next(self.gen)
+  File "D:\cake\flask-admin\api\app\models\base.py", line 27, in auto_commit
+    raise  e
+  File "D:\cake\flask-admin\api\app\models\base.py", line 24, in auto_commit
+    self.session.commit()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\session.py", line 1026, in commit
+    self.transaction.commit()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\session.py", line 493, in commit
+    self._prepare_impl()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\session.py", line 2451, in flush
+    self._flush(objects)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\util\compat.py", line 129, in reraise
+    raise value
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\session.py", line 2549, in _flush
+    flush_context.execute()
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 589, in execute
+    uow,
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\persistence.py", line 245, in save_obj
+    insert,
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\orm\persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\sql\elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\util\compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\util\compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\sqlalchemy\engine\default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 133, in execute
+    self.errorhandler(exc, value)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 35, in errorhandler
+    self.connection.errorhandler(self, errorclass, errorvalue)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\connections.py", line 118, in errorhandler
+    raise errorvalue
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 128, in execute
+    self._query(query)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\cursors.py", line 238, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\connections.py", line 342, in query
+    self._result = MySQLResult(self)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\packet.py", line 260, in __init__
+    self.first_packet = MysqlPacket(self.connection)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\packet.py", line 67, in __init__
+    raise_mysql_exception(self.__data)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\err.py", line 142, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "C:\Users\Administrator\.virtualenvs\api-p84yQ-z8\lib\site-packages\cymysql\err.py", line 135, in _check_mysql_exception
+    raise errorclass(errno,errorvalue)
+sqlalchemy.exc.DataError: (cymysql.err.DataError) (1406, "Data too long for column 'email' at row 1")
+[SQL: INSERT INTO user (create_time, status, email, nickname, auth, password) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: (1558258429, 1, 'qqaaaAAS1111122121aaaaa7@qq.com', 'lnzo', 1, 'pbkdf2:sha256:150000$iXNvnrhC$ff38a14b3dc9fed85639b83b71948a06417969e2cb1928e8b29e3b239aa37d1d')]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+2019-05-19 17:33:50 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:33:50] "POST /v1/mobile/client/register HTTP/1.1" 500 -
+2019-05-19 17:35:25 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-19 17:35:26 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-19 17:35:26 _internal.py[line:122] INFO  * Debugger PIN: 255-816-947
+2019-05-19 17:35:26 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

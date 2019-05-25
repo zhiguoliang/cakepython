@@ -1,0 +1,27 @@
+Sun, 19 May 2019 17:02:32 _internal.py[line:122] WARNING  * Debugger is active! _log
+Sun, 19 May 2019 17:02:32 _internal.py[line:122] INFO  * Debugger PIN: 255-816-947 _log
+Sun, 19 May 2019 17:02:32 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) _log
+Sun, 19 May 2019 17:02:33 cake.py[line:34] ERROR 400 Bad Request: {'account': ['Field must be between 5 and 32 characters long.']} framework_error
+Sun, 19 May 2019 17:02:33 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:02:33] "POST /v1/mobile/client/register HTTP/1.1" 400 - _log
+Sun, 19 May 2019 17:02:45 cake.py[line:34] ERROR (cymysql.err.DataError) (1406, "Data too long for column 'email' at row 1")
+[SQL: INSERT INTO user (create_time, status, email, nickname, auth, password) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: (1558256565, 1, 'qqqZZ66aa111aaaaaaaaaaaa7@qq.com', 'lnzo', 1, 'pbkdf2:sha256:150000$68c0oNOx$7d1b6f9c83156d0754a86c7b8871746d401df2922587e7f34a43aaa6114a7546')]
+(Background on this error at: http://sqlalche.me/e/9h9h) framework_error
+Sun, 19 May 2019 17:02:45 cake.py[line:50] ERROR (cymysql.err.DataError) (1406, "Data too long for column 'email' at row 1")
+[SQL: INSERT INTO user (create_time, status, email, nickname, auth, password) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: (1558256565, 1, 'qqqZZ66aa111aaaaaaaaaaaa7@qq.com', 'lnzo', 1, 'pbkdf2:sha256:150000$68c0oNOx$7d1b6f9c83156d0754a86c7b8871746d401df2922587e7f34a43aaa6114a7546')]
+(Background on this error at: http://sqlalche.me/e/9h9h) framework_error
+Sun, 19 May 2019 17:02:45 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:02:45] "POST /v1/mobile/client/register HTTP/1.1" 500 - _log
+Sun, 19 May 2019 17:03:07 cake.py[line:34] ERROR (cymysql.err.DataError) (1406, "Data too long for column 'email' at row 1")
+[SQL: INSERT INTO user (create_time, status, email, nickname, auth, password) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: (1558256587, 1, 'qqqZZ66aa111aaaaaaaaaaaa7@qq.com', 'lnzo', 1, 'pbkdf2:sha256:150000$MO6uLj5D$4d6638de610990a225954f003e3666d48331b49be256aeea8d61161431709135')]
+(Background on this error at: http://sqlalche.me/e/9h9h) framework_error
+Sun, 19 May 2019 17:03:07 cake.py[line:50] ERROR (cymysql.err.DataError) (1406, "Data too long for column 'email' at row 1")
+[SQL: INSERT INTO user (create_time, status, email, nickname, auth, password) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: (1558256587, 1, 'qqqZZ66aa111aaaaaaaaaaaa7@qq.com', 'lnzo', 1, 'pbkdf2:sha256:150000$MO6uLj5D$4d6638de610990a225954f003e3666d48331b49be256aeea8d61161431709135')]
+(Background on this error at: http://sqlalche.me/e/9h9h) framework_error
+Sun, 19 May 2019 17:03:07 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:03:07] "POST /v1/mobile/client/register HTTP/1.1" 500 - _log
+Sun, 19 May 2019 17:03:38 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:03:38] "POST /v1/mobile/client/register HTTP/1.1" 200 - _log
+Sun, 19 May 2019 17:03:54 cake.py[line:34] ERROR 400 Bad Request: {'account': ['']} framework_error
+Sun, 19 May 2019 17:03:54 _internal.py[line:122] INFO 127.0.0.1 - - [19/May/2019 17:03:54] "POST /v1/mobile/client/register HTTP/1.1" 400 - _log
+Sun, 19 May 2019 17:04:21 _internal.py[line:122] INFO  * Detected change in 'D:\\cake\\flask-admin\\api\\cake.py', reloading _log

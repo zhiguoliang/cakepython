@@ -2,7 +2,7 @@
 # @Time : 2019/4/11 19:17
 # @Author : lorenzo
 from flask import Blueprint
-from app.api.mobile.v1 import user, client
+from app.api.mobile.v1 import user, client, token
 
 
 def create_blueprint_v1():
@@ -13,5 +13,5 @@ def create_blueprint_v1():
      #注册移动端模块宏图
      user.api.register(mobile)
      client.api.register(mobile)
-
+     token.api.register(mobile)
      return mobile

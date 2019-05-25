@@ -1,31 +1,29 @@
 # _*_ coding: utf-8 _*_
 # @Time : 2019/4/11 19:39
 # @Author : lorenzo
-from app.libs.enums import ClientTypeEnum
+from flask import request, jsonify
+
+from app.libs.error_code import Success
 from app.libs.redprint import Redprint
-from flask import jsonify, request
-from app.libs.error_code import NotFound
+from app.libs.token_auth import auth
 from app.models.user import User
-from app.validators.forms import ClientForm, UserEmailForm
 
 api = Redprint('user')
 
 
-@api.route('/get',methods=['GET'])
+@api.route('', methods=['GET'])
+@auth.login_required
 def getUser():
-    data = request.json
-    form = ClientForm(data=data)
-    if form.validate():
-        promise = {
-            ClientTypeEnum.USER_EMAIL:__register_user_by_email()
-        }
-        promise[form.type.data]
-    return 'success'
+    #token 1个月 2小时
+    #token 是否过期 是否合法
+    #token
+    uid = request.args.get('uid')
+    user = User.query.get_or_404(uid)
+
+    return Success(result = user)
+
 
 #总分
 
 
-def __register_user_by_email():
-    form =UserEmailForm(data = request.json)
-    if form.validate():
-       User.register_by_email(form.nickname.data,form.account.data,form.secret.data)
+

@@ -9,17 +9,18 @@
 @time: 2019/4/18 15:03
 @desc:
 '''
-
+from flask import json
 from werkzeug.exceptions import  HTTPException
 from app.libs.error import APIException
 
-class success(APIException):
+class Success(APIException):
     code = 200
-    msg = 'ok'
+    msg = 'success'
     error_code = 0
 
 
-class DeleteSuccess(success):
+
+class DeleteSuccess(Success):
     code = 202
     error_code = 1
 

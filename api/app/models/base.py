@@ -59,6 +59,9 @@ class Base(db.Model):
     def __getitem__(self, item):
         return getattr(self, item)
 
+    def __getitem__(self, item):
+        return getattr(self, item)
+
     @property
     def create_datetime(self):
         if self.create_time:
