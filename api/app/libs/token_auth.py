@@ -9,15 +9,17 @@
 @time: 2019/5/25 14:28
 @desc:
 '''
-from flask import current_app, g
+from flask import current_app, g, request
 from flask_httpauth import  HTTPBasicAuth
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, BadSignature, SignatureExpired
 from sqlalchemy.util import namedtuple
 
-from app.libs.error_code import AuthFailed
+from app.libs.error_code import AuthFailed, Forbidden
 
 #定义一个对象来存储数据
-User = namedtuple('User',['uid','ac_type','scope'])
+from app.libs.scope import is_in_scope
+
+User = namedtuple('User',['uid','ac_type','is_admin'])
 
 
 
@@ -48,5 +50,11 @@ def verify_auth_token(token):
 
     uid = data['uid']
     ac_type = data['type']
-
-    return  User(uid, ac_type, '')
+    scope = data['scope']
+    print('2')
+    #request 视图函数
+    print(request.endpoint)
+    allow = is_in_scope(scope, request.endpoint)
+    if not allow:
+        raise Forbidden()
+    return  User(uid, ac_type, scope)

@@ -53,7 +53,8 @@ class User(Base):
             raise NotFound(msg = "user not fount")
         if not user.check_password(password):
             raise  AuthFailed()
-        return { 'uid':user.id }
+        scope = 'AdminScope' if user.auth ==2 else 'UserScope'
+        return { 'uid':user.id,'scope':scope }
 
 
 

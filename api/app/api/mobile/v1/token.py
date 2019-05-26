@@ -23,6 +23,7 @@ api = Redprint('token')
 
 @api.route('', methods=['POST'])
 def get_token():
+    print('1111')
     form = ClientForm().validata_for_api()
     promise = {
         ClientTypeEnum.USER_EMAIL: User.verify
@@ -36,7 +37,7 @@ def get_token():
     token = generate_auth_token(
         identity['uid'],
         form.type.data,
-        None,
+        identity['scope'],
         expiration
     )
 
@@ -56,5 +57,6 @@ def generate_auth_token(uid, ac_type, scope=None, expiration=7200):
     return  s.dumps({
         'uid': uid,
         'type': ac_type.value,
+        'scope':scope
     })
 

@@ -717,3 +717,1086 @@ TypeError: getUser() missing 1 required positional argument: 'uid'
 2019-05-25 17:47:15 _internal.py[line:122] INFO  * Debugger PIN: 710-284-662
 2019-05-25 17:47:15 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2019-05-25 17:47:18 _internal.py[line:122] INFO 127.0.0.1 - - [25/May/2019 17:47:18] "GET /v1/mobile/user?uid=10 HTTP/1.1" 200 -
+2019-05-26 12:42:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 12:42:54 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 12:42:54 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 12:42:54 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 12:49:58 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 12:49:58] "POST /v1/mobile/client/register HTTP/1.1" 400 -
+2019-05-26 12:50:12 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 12:50:12] "POST /v1/mobile/client/register HTTP/1.1" 400 -
+2019-05-26 12:50:27 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 12:50:27] "POST /v1/mobile/client/register HTTP/1.1" 400 -
+2019-05-26 12:50:47 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 12:50:47] "POST /v1/mobile/client/register HTTP/1.1" 400 -
+2019-05-26 12:51:11 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 12:51:11] "POST /v1/mobile/client/register HTTP/1.1" 200 -
+2019-05-26 12:54:36 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 12:54:36] "POST /v1/mobile/client/register HTTP/1.1" 400 -
+2019-05-26 13:04:40 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:04:40 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:04:41 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:04:41 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:04:41 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:08:32 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:08:32] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 401 -
+2019-05-26 13:09:59 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:09:59] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 13:10:09 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:10:09] "POST /v1/mobile/user/delete?uid=1 HTTP/1.1" 405 -
+2019-05-26 13:10:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:10:17] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 401 -
+2019-05-26 13:13:06 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:13:06 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:13:07 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:13:07 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:13:07 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:14:43 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:14:43] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 13:16:39 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:16:39] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 401 -
+2019-05-26 13:17:08 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:17:08 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:17:08] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:17:48 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:17:48 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:17:48 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:17:48 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:17:49 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:17:49 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:17:49 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:17:49] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:18:03 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:18:05 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:18:05 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:18:05 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:18:06 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:18:06 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:18:06] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:18:07 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:18:07 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:18:07] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:18:13 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:18:14 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:18:14 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:18:14 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:18:15 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:18:15 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:18:15] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:18:17 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:18:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:18:17] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:18:41 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:18:41 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:18:41] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:21:04 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:21:04 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:21:04] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:21:20 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:21:20 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:21:20] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:21:21 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:21:21 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:21:21] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:21:30 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:21:31 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:21:31 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:21:31 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:21:32 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:21:32 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:21:32] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:22:13 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:22:13 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:22:13] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:22:50 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:22:51 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:22:51 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:22:51 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:23:07 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:23:07 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:23:07] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:23:57 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 62, in decorated
+    return f(*args, **kwargs)
+  File "F:\cake\cakepython\cakepython\api\app\api\mobile\v1\user.py", line 35, in delete_uer
+    user = User.query.get_or_not_found(uid)
+AttributeError: 'Query' object has no attribute 'get_or_not_found'
+2019-05-26 13:23:58 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:23:58] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 500 -
+2019-05-26 13:26:19 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:26:19 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:26:20 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:26:20 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:26:20 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:26:20 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:26:21 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:26:21 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:26:21 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:26:21 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:26:21] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 200 -
+2019-05-26 13:26:22 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:26:22 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:26:22 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:26:22 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:26:22 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:26:22 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:27:04 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:27:04 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:27:04 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:27:04 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:27:04 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:27:04 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:27:05 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:27:05 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:27:05 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:27:06 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:27:06 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:27:06 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:27:06 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:27:06 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:27:06 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:27:27 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:27:27] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:31:39 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:31:39] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:31:41 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:31:41] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:31:45 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:31:45] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:31:47 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:31:47] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:31:48 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:31:48] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:31:49 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:31:49] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:31:50 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:31:50] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:33:47 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:33:47 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:33:48 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:33:48 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:33:48 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:33:48 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:33:48 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:33:48 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:33:48 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:33:50 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:33:50 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:33:50 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:33:50 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:33:50 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:33:50 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:33:50 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:33:50] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 404 -
+2019-05-26 13:35:06 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:35:06] "DELETE /v1/mobile/user/delete?uid=1 HTTP/1.1" 202 -
+2019-05-26 13:53:59 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:53:59 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:54:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:54:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:54:01 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:54:01 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:54:01 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:54:01 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:54:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 13:54:17] "DELETE /v1/mobile/user/delete HTTP/1.1" 202 -
+2019-05-26 13:59:54 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:59:54 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:59:54 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:59:55 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 13:59:55 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 13:59:56 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:59:56 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:59:56 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:59:56 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:59:56 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:59:56 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 13:59:56 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 13:59:56 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 13:59:56 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:13:45 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\models\\user.py', reloading
+2019-05-26 16:13:45 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:13:45 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 16:13:45 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 16:13:45 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:13:45 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:13:46 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:13:46 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:13:46 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:13:47 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:13:47 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:13:47 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:21:04 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:21:04 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:21:04 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:25:26 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\models\\user.py', reloading
+2019-05-26 16:25:26 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:25:26 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\models\\user.py', reloading
+2019-05-26 16:25:26 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:25:26 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\models\\user.py', reloading
+2019-05-26 16:25:27 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:25:28 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:25:28 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:25:28 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:25:29 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:25:29 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:25:29 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:25:29 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:25:29 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:25:29 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:53:18 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 16:53:18 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:53:19 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 16:53:19 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:53:19 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 16:53:19 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:53:20 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:53:20 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:53:20 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:53:21 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:53:21 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:53:21 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:53:21 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:53:21 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:53:21 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:53:53 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 16:53:53] "DELETE /v1/mobile/user HTTP/1.1" 405 -
+2019-05-26 16:53:59 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 16:53:59] "POST /v1/mobile/user HTTP/1.1" 405 -
+2019-05-26 16:54:06 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 16:54:06 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 16:54:06] "GET /v1/mobile/user HTTP/1.1" 500 -
+2019-05-26 16:54:52 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 16:54:52 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 16:54:52] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 16:55:19 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:55:20 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:55:20 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:55:20 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:55:22 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:55:23 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:55:23 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:55:23 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:55:26 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:55:27 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:55:27 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:55:27 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:55:30 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 16:55:30 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 16:55:30] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 16:55:56 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:55:58 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 16:55:58 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 16:55:58 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 16:56:01 cake.py[line:44] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 16:56:01 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 16:56:01] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 16:58:30 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\config\\setting.py', reloading
+2019-05-26 16:58:30 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 16:58:31 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:02:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:02:54 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:02:54 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:02:54 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:03:02 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:03:02 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:03:02] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:03:46 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:03:48 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:03:48 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:03:48 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:04:04 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:04:04 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:04:04] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:04:50 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:04:50 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:04:50] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:04:56 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:04:57 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:04:57 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:04:57 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:04:58 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:04:58 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:04:58] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:06:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:06:02 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:06:02 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:06:02 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:06:02 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:06:02 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:06:02] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:06:08 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:06:08 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:06:08] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:06:19 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:06:20 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:06:20 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:06:20] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:06:20 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:06:20 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:06:20 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:07:49 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:07:49 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:07:49] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:07:55 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:07:56 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:07:56 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:07:56 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:07:58 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:07:58 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:07:58] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:08:39 cake.py[line:45] ERROR Got exception on main handler
+Traceback (most recent call last):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1805, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 60, in decorated
+    if not self.authenticate(auth, password):
+  File "C:\Users\Administrator\.virtualenvs\api-YEdVD3R-\lib\site-packages\flask_httpauth.py", line 96, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 33, in verify_password
+    user_info = verify_auth_token(token)
+  File "F:\cake\cakepython\cakepython\api\app\libs\token_auth.py", line 53, in verify_auth_token
+    scope = data['scope']
+KeyError: 'scope'
+2019-05-26 17:08:40 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:08:40] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:09:00 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 17:09:00 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 17:09:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:09:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:09:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:09:00 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\cake.py', reloading
+2019-05-26 17:09:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:11:16 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:11:18 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:11:18 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:11:18 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:12:53 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:12:53] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:14:01 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:14:01] "POST /v1/mobile/token HTTP/1.1" 500 -
+2019-05-26 17:14:27 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:14:27] "POST /v1/mobile/token HTTP/1.1" 500 -
+2019-05-26 17:15:43 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\models\\user.py', reloading
+2019-05-26 17:15:43 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:15:45 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:15:45 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:15:45 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:15:54 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:15:55 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:15:55 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:15:55 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:15:57 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:15:57] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:16:12 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:16:12] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:16:55 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:16:56 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:16:56 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:16:56 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:16:58 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:16:58] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:17:06 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:17:06] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:17:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:17:17] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:17:34 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:17:34] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:18:19 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:18:20 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:18:20 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:18:20 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:18:21 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:18:21] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:18:41 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:18:41] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:18:59 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:18:59] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:19:11 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:19:13 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:19:13 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:19:13 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:19:14 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:19:14] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:19:15 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:19:15] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:19:41 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:19:41] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:20:08 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:20:08] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:21:16 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:21:16] "GET /v1/mobile/user/super_get_User?uid=1 HTTP/1.1" 404 -
+2019-05-26 17:21:25 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:21:25] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:21:45 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:21:45 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:21:45 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:21:45 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:21:45 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:21:45 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:21:47 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:21:47 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:21:47 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:21:47 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:21:47 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:21:47 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:21:47 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:21:47 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:21:47 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:21:51 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:21:51] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:21:54 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:21:54] "GET /v1/mobile/user?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:22:22 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:22:22] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:22:47 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:22:47 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:22:47 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:22:47 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:22:47 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:22:47 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:22:48 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:22:48 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:22:48 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:22:49 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:22:49 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:22:49 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:22:49] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 200 -
+2019-05-26 17:22:49 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:22:49 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:22:49 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:22:49 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:22:53 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:22:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:22:54 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:22:54 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\user.py', reloading
+2019-05-26 17:22:54 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:22:54 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:22:55 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:22:55 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:22:55 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:22:55 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:22:55 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:22:55 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:22:56 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:22:56 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:22:56 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:23:13 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:23:15 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:23:15 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:23:15 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:23:16 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:23:16] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:23:49 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:23:50 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:23:50 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:23:50 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:23:53 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:23:53] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:23:55 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:23:55] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:23:56 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:23:56] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:24:11 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:24:11] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:24:13 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:24:13] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:24:14 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:24:14] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:24:14 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:24:14] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:24:15 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:24:15] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:24:44 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:24:46 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:24:46 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:24:46 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:24:47 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:24:47] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:05 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:05] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:07 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:07] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:08 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:08] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:36 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:36] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:37 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:37] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:41 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:41] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:51 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:51] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:52 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:52] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:52 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:25:52] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:25:57 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:27:16 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:27:16] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:27:20 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:27:22 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:27:22 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:27:22 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:27:23 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:27:23] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:27:33 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:27:33] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:27:37 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:27:39 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:27:39 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:27:39 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:27:39 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:27:39] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:27:40 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:27:40] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:28:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:28:02 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:28:02 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:28:02 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:28:03 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:28:03] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:28:04 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:28:04] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:28:05 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:28:05] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:29:29 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:29:31 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:29:31 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:29:31 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:29:31 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:29:31] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:29:48 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:29:48] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:29:50 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:29:50] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:30:00 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:30:00] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:30:02 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:30:02] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:30:12 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:30:14 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:30:14] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:30:14 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:30:14 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:30:14 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:30:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:30:17] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:30:33 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:30:33] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:31:22 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:31:22] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:31:25 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:31:26 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:31:26 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:31:26 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:31:31 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:31:31] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:31:50 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:31:51 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:31:51 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:31:52 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:31:52 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:31:52] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:31:53 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:31:53] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:31:54 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:31:54] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:31:55 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:31:55] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\token.py', reloading
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\token.py', reloading
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\token.py', reloading
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\token.py', reloading
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\token.py', reloading
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\api\\mobile\\v1\\token.py', reloading
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:32:18 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:32:19 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:32:21 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:32:21 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:32:21 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:32:21 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:32:21 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:32:21 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:32:43 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:32:43] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:33:05 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:33:05] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:33:29 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:33:29 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:33:29 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:33:29 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:33:30 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:33:30 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:33:30 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:33:30 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:33:30 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:33:30 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:34:25 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:34:25] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:35:29 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:35:29] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 500 -
+2019-05-26 17:35:37 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:35:37 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:35:37 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:35:37 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:35:39 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:35:39 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:35:39 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:35:39 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:35:39 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:35:39 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:36:24 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:36:24] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:38:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:38:01 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:38:01 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:38:01 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:38:07 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:38:07] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:38:43 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:38:43] "POST /v1/mobile/token HTTP/1.1" 200 -
+2019-05-26 17:38:56 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:38:56] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:39:53 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:39:53] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:40:34 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:40:34 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:40:34 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:40:34 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:40:34 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:40:34 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:40:34 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:40:35 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:40:35] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:40:35 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:40:35 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:40:35 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:40:41 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:40:41] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:40:52 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:40:52] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:40:56 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:40:56] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:41:01 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:41:01 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:01 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:41:02 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:03 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:03 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:03 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:03 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:41:03] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:41:03 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:03 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:03 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:22 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:41:22 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:23 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:41:23 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:23 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:23 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:23 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:24 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:24 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:24 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:24 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:25 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:25 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:25 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:25 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:41:25] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:41:35 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:41:35 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:35 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:41:35 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:41:35 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:35 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:36 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:36 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:36 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:36 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:41:36] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:41:37 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:37 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:37 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:37 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:37 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:37 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:53 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:41:53 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:41:53 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:41:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:41:54 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:54 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:54 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:54 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:41:54] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:41:55 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:55 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:55 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:41:55 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:41:55 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:41:55 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:42:08 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:42:08 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:42:08 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:42:08 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:42:08 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:42:08 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:42:09 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:42:09 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:42:09 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:42:09 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:09] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:42:10 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:42:10 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:42:10 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:42:10 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:42:10 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:42:10 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:42:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:17] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:42:27 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:27] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:42:38 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:38] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:42:50 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:42:52 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:42:52 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:42:52 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:42:52 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:52] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:42:53 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:53] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:42:54 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:54] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:42:54 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:54] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:42:55 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:55] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:42:56 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:42:56] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:43:06 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:06] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:43:07 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:07] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:43:30 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:30] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:43:31 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:31] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:43:31 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:31] "GET /v1/mobile/user/get HTTP/1.1" 401 -
+2019-05-26 17:43:35 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:35] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:43:49 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:49] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:43:56 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:43:56] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:44:23 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:44:23] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:44:27 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:44:28 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:44:28 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:44:28 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:44:29 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:44:29] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:45:04 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:45:04] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:45:26 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:45:26 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:45:27 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:45:27 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:45:27 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:45:27 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:45:28 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:45:28 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:45:28 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:45:28 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:45:28 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:45:28 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:45:28 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:45:28] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:45:35 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:45:35] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:02 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:02] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:03 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:03] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:14 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:14] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:16 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:16] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:16 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:16] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:17] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:17] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:46:31 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:46:31] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:47:02 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:47:02 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:47:03 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:47:03 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:47:03 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:47:03 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:47:03 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:47:03 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:47:03] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:47:47 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:47:48 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:47:48 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:47:48 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:48:17 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:48:17] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:48:36 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:48:36] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:48:44 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:48:44] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:48:44 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:48:44 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:48:45 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:48:45 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:48:46 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:48:46 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:48:46] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:03 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:03] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:18 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:18] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:19 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:19] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:20 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:20] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:21 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:21] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:22 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:22] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:23 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:23] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:23 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:23] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:24 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:24] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:27 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:27] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:28 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:28] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:29 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:29] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:34 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:34] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:49:34 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:49:34] "GET /favicon.ico HTTP/1.1" 404 -
+2019-05-26 17:50:00 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:50:00 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:50:02 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:50:02 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:50:02 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:50:02 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:50:02] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:50:24 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:50:24] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:50:27 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:50:27] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:50:48 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:50:48 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:50:49 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:50:49 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:50:49 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:50:55 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:50:56 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:50:56] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:50:57 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:50:57 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:50:57 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:51:20 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:51:20] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:51:34 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:51:34 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\token_auth.py', reloading
+2019-05-26 17:51:34 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:51:34 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:51:36 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:51:36 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:51:36 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:51:36 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:51:36 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:51:36 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:51:41 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:51:42 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:51:42] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 401 -
+2019-05-26 17:51:42 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:51:42 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:51:42 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:51:54 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:51:54] "GET /v1/mobile/user/get?uid=2 HTTP/1.1" 401 -
+2019-05-26 17:53:50 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:53:50] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 403 -
+2019-05-26 17:53:53 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:53:53 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:53:53 _internal.py[line:122] INFO  * Detected change in 'F:\\cake\\cakepython\\cakepython\\api\\app\\libs\\scope.py', reloading
+2019-05-26 17:53:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:53:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:53:53 _internal.py[line:122] INFO  * Restarting with stat
+2019-05-26 17:53:54 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:53:54 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:53:54 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:53:55 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:53:55 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:53:55 _internal.py[line:122] WARNING  * Debugger is active!
+2019-05-26 17:53:55 _internal.py[line:122] INFO  * Debugger PIN: 122-056-264
+2019-05-26 17:53:55 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:53:55 _internal.py[line:122] INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-26 17:54:02 _internal.py[line:122] INFO 127.0.0.1 - - [26/May/2019 17:54:02] "GET /v1/mobile/user/get?uid=1 HTTP/1.1" 200 -

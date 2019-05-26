@@ -3,24 +3,25 @@
 # @Author : lorenzo
 import logging
 import logging.handlers
+
+
 from werkzeug.exceptions import HTTPException
-
-#日记记录
-formatter = logging.Formatter("%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s", "%Y-%m-%d %H:%M:%S")
-log_file_handler = logging.handlers.TimedRotatingFileHandler(filename="cake.log", when="D", interval=1, backupCount=1)
-log_file_handler.setFormatter(formatter)
-logging.getLogger().addHandler(log_file_handler)
-
-
-
-
-
 
 from app import create_app
 from app.libs.error import APIException
 from app.libs.error_code import ServerError
 
 app = create_app()
+
+#日记记录
+
+if app.config['DEBUG'] == True:
+
+    formatter = logging.Formatter("%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s", "%Y-%m-%d %H:%M:%S")
+    log_file_handler = logging.handlers.TimedRotatingFileHandler(filename="cake.log", when="D", interval=1, backupCount=1)
+    log_file_handler.setFormatter(formatter)
+    logging.getLogger().addHandler(log_file_handler)
+
 
 @app.errorhandler(Exception)
 def framework_error(e):
@@ -40,8 +41,9 @@ def framework_error(e):
        if not app.config["DEBUG"]:
           return ServerError()
        else:
+           pass
           #记录堆栈到日记里
-          logging.exception('Got exception on main handler')
+        # logging.exception('Got exception on main handler')
           #app.logger.info(e)
 
 
